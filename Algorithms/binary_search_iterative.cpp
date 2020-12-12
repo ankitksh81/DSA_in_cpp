@@ -12,9 +12,13 @@ int binarySearch(int arr[], int key)
         {
             low = mid + 1;
         }
-        else
+        else if (arr[mid] == key)
         {
             return mid;
+        }
+        else
+        {
+            return -1;
         }
     }
 }
