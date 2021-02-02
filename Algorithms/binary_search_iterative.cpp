@@ -6,6 +6,7 @@ int binarySearch(int arr[], int key)
     while (low <= high)
     {
         int mid = (low + high) / 2;
+        // mid = low + (high - low) / 2;
 
         if (arr[mid] < key)
             high = mid - 1;
